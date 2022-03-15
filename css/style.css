@@ -1,0 +1,133 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: rgb(34, 195, 104);
+  background: linear-gradient(
+    11deg,
+    rgba(34, 195, 104, 1) 25%,
+    rgba(253, 45, 49, 1) 89%
+  );
+}
+
+.bg-h1 {
+  background-color: rgb(15, 151, 106);
+  margin-bottom: 5rem;
+  padding: 1.2rem;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  font-size: 2rem;
+
+  background-color: white;
+  margin: 20rem auto 20rem auto;
+  width: 120rem;
+  -webkit-box-shadow: 0px 9px 18px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 18px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 18px 0px rgba(0, 0, 0, 0.75);
+  padding-bottom: 2rem;
+}
+
+.formulario {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.form {
+  display: flex;
+  gap: 4rem;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  gap: 4rem;
+}
+
+.labels {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.radios {
+  display: flex;
+  gap: 11rem;
+  margin: 4rem 0 4rem 0;
+  font-size: 1.3rem;
+  font-size: 2rem;
+}
+
+.botonera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.resultados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.3rem;
+
+  width: 60rem;
+  margin: 0 auto;
+}
+
+.alerta {
+  color: red;
+  text-transform: uppercase;
+  border: 1px solid red;
+  padding: 1rem;
+}
+
+.btn {
+  width: 15%;
+  border: none;
+
+  background-color: rgb(15, 151, 106);
+  padding: 1.2rem;
+  border-radius: 1rem;
+  color: white;
+  text-transform: uppercase;
+  transition: 300ms;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgba(15, 151, 106, 0.767);
+}
+
+h3 {
+  background-color: rgb(15, 151, 106);
+  padding: 0.5rem;
+  color: white;
+}

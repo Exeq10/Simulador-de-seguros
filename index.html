@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Cotizador</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="bg-h1"><h1 class="titulo">Cotiza tu vehiculo</h1></div>
+
+      <form class="formulario" action="">
+        <div class="form">
+          <div class="labels">
+            <label for="marca">Marca</label>
+            <label for="año">Año</label>
+          </div>
+
+          <div class="inputs">
+            <select name="marca" id="marca" onchange="showChange()">
+              <option value="0" selected disabled>--Seleccione Marca--</option>
+            </select>
+
+            <select name="año" id="año" onchange="showChangeAño()">
+              <option value="0" selected disabled>--Seleccione Año--</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="radios">
+          <label for="cobertura">Cobertura</label>
+          <select name="cobertura" id="cobertura">
+            <option value="0" selected disabled>
+              --Seleccione su cobertura--
+            </option>
+            <option value="completa">Completa</option>
+            <option value="basica">Básica</option>
+          </select>
+        </div>
+      </form>
+      <div class="botonera">
+        <input
+          type="submit"
+          class="btn"
+          id="boton"
+          value="Cotizar"
+          onclick="Validar()"
+        />
+      </div>
+
+      <div class="resultados" id="resultados"></div>
+    </div>
+
+    <script src="js/datos.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
