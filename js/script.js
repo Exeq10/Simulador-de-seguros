@@ -34,14 +34,14 @@ años.forEach((años) => {
 function Cotizar() {
   let total;
 
-  resultado.innerHTML = ` <p class="animate__animated animate__bounce animate__infinite infinite">
+  resultado.innerHTML = ` <p class=" load animate__animated animate__bounce animate__infinite infinite">
   Cargando...
 </p>`;
   setTimeout(() => {
     if (getCobertura.value === "completa") {
       total = parseInt(setMarcas.value) + parseInt(setAño.value) + 5000;
 
-      resultado.innerHTML = `<p>Vehiculo : ${showChange()}</> <p>Año : ${showChangeAño()}</p> <p>Cobertura : Completa</p><h3>Monto a pagar: ${Formato(
+      resultado.innerHTML = `<p >Vehiculo : ${showChange()}</> <p>Año : ${showChangeAño()}</p> <p>Cobertura : Completa</p><h3>Monto a pagar: ${Formato(
         total,
         "UYU"
       )}</h3>
