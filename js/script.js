@@ -95,3 +95,14 @@ const Formato = (valor, moneda) => {
     minimumFractionDigits: 2,
   });
 };
+
+function view() {
+  let nav = document.querySelector(".burguer");
+
+  if (nav.classList.contains("d-none")) {
+    nav.classList.remove("d-none");
+    console.log(nav);
+  } else {
+    nav.classList.add("d-none");
+  }
+}
